@@ -7,6 +7,9 @@ html {
 body {
     font-family: "Poppins", "sans-serif";
     font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.67;
+    color: #5f5b53;
 }
 html,
 body {
@@ -20,6 +23,11 @@ body {
 }
 a {
     text-decoration: none;
+}
+h1,
+h2 {
+    font-family: "Sen";
+    font-weight: 700;
 }
 .d-flex {
     display: flex;
@@ -42,7 +50,7 @@ a {
     padding: 16px 0;
     position: sticky;
     top: 0px;
-    background: #FFFCF4;;
+    background: #fffcf4;
 }
 .header ul {
     gap: 42px;
@@ -53,25 +61,22 @@ a {
 }
 
 .block__nav li a {
-    font-weight: 400;
     line-height: 1.75;
     color: #5f5b53;
 }
-.block__nav li a:hover{
+.block__nav li a:hover {
     color: #000;
-    
 }
-.block__nav li:first-child{
-
+.block__nav li:first-child {
     position: relative;
 }
-.block__nav li:first-child a{
+.block__nav li:first-child a {
     font-weight: 600;
     color: #000;
 }
-.block__nav li:first-child a::after{
+.block__nav li:first-child a::after {
     position: absolute;
-    content: '';
+    content: "";
     width: 14px;
     height: 2px;
     background: #000;
@@ -85,4 +90,57 @@ a {
     font-size: 1.6rem;
     color: #ffffff;
     padding: 17px 16px;
+}
+
+/* Hero */
+.hero {
+    margin-top: 64px;
+}
+.hero__img__block {
+    width: 48%;
+}
+.hero__infor {
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 52%;
+    padding-left: 130px;
+}
+.hero__title {
+    font-size: 5.8rem;
+    line-height: 1.17;
+    /* or 117% */
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+.hero__sub-title {
+    margin-top: 22px;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    /* or 167% */
+    color: #5f5b53;
+}
+.hero__cta__group {
+    margin-top: 38px;
+}
+.hero__cta__btn {
+    width: 180px;
+    background: #ffb900;
+    font-size: 1.8rem;
+    border-radius: 32px;
+}
+.hero__desc {
+    margin-top: 48px;
+    font-size: 1.8rem;
+}
+.hero__stats {
+    margin-top: 8px;
+    column-gap: 28px;
+}
+.hero__stats_qty {
+    font-family: "Sen";
+    font-weight: 700;
+    font-size: 4.4rem;
+    line-height: 1.23;
+    /* identical to box height, or 123% */
+    color: #171100;
 }
