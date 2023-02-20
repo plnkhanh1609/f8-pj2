@@ -21,6 +21,10 @@ body {
     margin-right: auto;
     margin-left: auto;
 }
+button {
+    cursor: pointer;
+    border: none;
+}
 a {
     text-decoration: none;
 }
@@ -29,25 +33,64 @@ h2 {
     font-family: "Sen";
     font-weight: 700;
 }
-.d-flex {
+/* Flex */
+.d--flex {
     display: flex;
+}
+.flex--1 {
+    flex: 1;
+}
+.justify__content--center {
+    justify-content: center;
+}
+.justify__content--spbetweens {
+    justify-content: space-between;
+}
+.align__items--center {
+    align-items: center;
 }
 .flex-center {
     justify-content: center;
     align-items: center;
 }
+/* Gap */
+.column__gap--3 {
+    column-gap: 30px;
+}
+/* SPACING */
+.px--22 {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+.py--16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.mt-12 {
+    margin-top: 12px;
+}
+.mt-55 {
+    margin-top: 55px;
+}
 .btn {
+    position: relative;
+    display: inline-block;
     min-width: 118px;
-    background: #171100;
     color: #fff;
     border-radius: 25px;
     text-align: center;
     font-size: 1.4rem;
-    padding: 18px 16px;
+    padding: 13px 16px;
     transition: opacity 0.5s;
 }
-.btn:hover{
+.btn:hover {
     opacity: 0.9;
+}
+.btn__color--primary {
+    background: #171100;
+}
+.btn__color--secondary {
+    background: #ffb900;
 }
 .border_circle {
     border-radius: 50%;
@@ -134,7 +177,6 @@ h2 {
 .hero__summary__row .title {
     font-weight: 600;
     font-size: 1.8rem;
-    line-height: 1.67;
     /* identical to box height, or 167% */
     color: #171100;
 }
@@ -165,7 +207,6 @@ h2 {
 .hero__sub-title {
     margin-top: 22px;
     font-size: 1.8rem;
-    line-height: 1.67;
     color: #5f5b53;
 }
 .hero__cta__group {
@@ -179,8 +220,6 @@ h2 {
 }
 .hero__watch__video {
     margin-left: 28px;
-    border: 0;
-    cursor: pointer;
     background: #ffffff;
     column-gap: 14px;
 }
@@ -209,5 +248,70 @@ h2 {
     font-size: 4.4rem;
     line-height: 1.23;
     /* identical to box height, or 123% */
+    color: #171100;
+}
+
+/* Courses */
+
+.courses {
+    margin-top: 135px;
+    padding: 65px 0;
+}
+.courses__sub__title {
+    font-size: 38px;
+    line-height: 48px;
+    letter-spacing: -0.02em;
+    color: #171100;
+}
+.courses__desc {
+    width: 458px;
+    margin-top: 16px;
+    font-size: 18px;
+}
+.courses__control {
+    column-gap: 18px;
+}
+.courses__control__btn {
+    width: 40px;
+    height: 40px;
+    background: #fff;
+    border: 1px solid #ffb900;
+    color: #ffb900;
+    transition: background-color 0.5s, color 0.5s;
+    font-size: 1.6rem;
+}
+.courses__control__btn:hover {
+    background: #ffb900;
+    color: #fff;
+}
+.courses-item {
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+.courses-item__thumb {
+    object-fit: cover;
+    margin: -1px;
+    width: calc(100% + 2px);
+    height: 278px;
+    border-radius: 12px 12px 0px 0px;
+}
+.courses-item__title a {
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #171100;
+}
+.courses-item__rtvalue {
+    margin-left: 6px;
+    line-height: 1.8;
+    /* identical to box height, or 175% */
+    color: #fea31b;
+}
+.courses-item__desc {
+    margin-top: 6px;
+    font-size: 1.4rem;
+}
+.courses-item__price {
+    font-weight: 600;
+    font-size: 1.8rem;
     color: #171100;
 }

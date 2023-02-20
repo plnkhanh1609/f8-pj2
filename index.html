@@ -4,6 +4,15 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Icon -->
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -20,47 +29,57 @@
     <body>
         <header class="header">
             <div class="content">
-                <nav class="header__nav d-flex flex-center">
+                <nav class="header__nav d--flex flex-center">
                     <img src="/assets/img/Logo.svg" alt="Lesson" class="logo" />
-                    <div class="block__nav d-flex flex-center">
-                        <ul class="d-flex">
+                    <div class="block__nav d--flex flex-center">
+                        <ul class="d--flex">
                             <li><a href="#!">Home</a></li>
                             <li><a href="#!">Courses</a></li>
                             <li><a href="#!">Pricing</a></li>
                             <li><a href="#!">Reviews</a></li>
                         </ul>
-                        <a class="btn header__btn__cta" href="#!">Sign Up</a>
+                        <a class="btn btn__color--primary header__btn__cta" href="#!">Sign Up</a>
                     </div>
                 </nav>
             </div>
         </header>
         <main>
             <div class="hero">
-                <div class="content d-flex">
+                <div class="content d--flex">
                     <div class="hero__img__block">
-                        <img class="img" src="./assets/img/guy-lesson 1.png" alt="Learn without limits and spread knowledge." />
-                        <div class="hero__summary d-flex">
-                            <div class="hero__summary__row d-flex flex-center">
-                                <div class="hero__summary__icon border_circle d-flex flex-center">
-                                    <img src="./assets/img/design.svg" alt="">
+                        <img
+                            class="img"
+                            src="./assets/img/guy-lesson 1.png"
+                            alt="Learn without limits and spread knowledge."
+                        />
+                        <div class="hero__summary d--flex">
+                            <div class="hero__summary__row d--flex flex-center">
+                                <div
+                                    class="hero__summary__icon border_circle d--flex flex-center"
+                                >
+                                    <img src="./assets/img/design.svg" alt="" />
                                 </div>
                                 <div class="hero__summary__infor">
                                     <p class="label">20 Courses</p>
                                     <p class="title">UI/UX Design</p>
                                 </div>
                             </div>
-                            <div class="hero__summary__row d-flex flex-center">
-                                <div class="hero__summary__icon border_circle d-flex flex-center">
-                                    <img src="./assets/img/dev.svg" alt="">
+                            <div class="hero__summary__row d--flex flex-center">
+                                <div
+                                    class="hero__summary__icon border_circle d--flex flex-center"
+                                >
+                                    <img src="./assets/img/dev.svg" alt="" />
                                 </div>
                                 <div class="hero__summary__infor">
                                     <p class="label">20 Courses</p>
                                     <p class="title">Development</p>
                                 </div>
                             </div>
-                            <div class="hero__summary__row d-flex flex-center">
-                                <div class="hero__summary__icon border_circle d-flex flex-center">
-                                    <img src="./assets/img/mkt.svg" alt="">
+                            <div class="hero__summary__row d--flex flex-center">
+                                <div
+                                    class="hero__summary__icon border_circle d--flex flex-center"
+                                >
+                                    <img src="./assets/img/mkt.svg" alt="" />
                                 </div>
                                 <div class="hero__summary__infor">
                                     <p class="label">30 Courses</p>
@@ -78,12 +97,16 @@
                             with courses, certificates, and degrees from
                             world-class universities and companies.
                         </p>
-                        <div class="hero__cta__group d-flex">
+                        <div class="hero__cta__group d--flex">
                             <a href="#!" class="btn hero__cta__btn"
                                 >See Courses</a
                             >
-                            <button class="hero__watch__video d-flex flex-center">
-                                <div class="hero__icon__play border_circle d-flex flex-center">
+                            <button
+                                class="hero__watch__video d--flex flex-center"
+                            >
+                                <div
+                                    class="hero__icon__play border_circle d--flex flex-center"
+                                >
                                     <img
                                         src="./assets/img/btnplay.svg"
                                         alt="play"
@@ -93,7 +116,7 @@
                             </button>
                         </div>
                         <p class="hero__desc">Recent engagement</p>
-                        <div class="hero__stats d-flex">
+                        <div class="hero__stats d--flex">
                             <p>
                                 <span class="hero__stats_qty">50K</span>
                                 Students
@@ -106,7 +129,111 @@
                 </div>
             </div>
             <div class="courses">
-                <div class="content"></div>
+                <div class="content">
+                    <div class="justify__content--spbetweens d--flex">
+                        <div class="courses__infor">
+                            <h2 class="courses__sub__title">
+                                Our popular courses
+                            </h2>
+                            <p class="courses__desc">
+                                Build new skills with new trendy courses and
+                                shine for the next future career.
+                            </p>
+                        </div>
+                        <div class="courses__control d--flex">
+                            <button
+                                class="courses__control__btn d--flex flex-center border_circle"
+                            >
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </button>
+                            <button
+                                class="courses__control__btn d--flex flex-center border_circle"
+                            >
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d--flex column__gap--3 mt-55">
+                        <div class="courses-item flex--1">
+                            <a href="#!"><img src="./assets/img/web-design.jpg" alt="" class="courses-item__thumb" /></a>
+                            <div class="px--22 py--16">
+                                <div class="d--flex justify__content--spbetweens" >
+                                    <h3 class="courses-item__title">
+                                        <a href="#!">Basic web design</a>
+                                    </h3>
+                                    <div class="d--flex align__items--center">
+                                        <img src="/assets/img/Star.svg" alt="">
+                                        <span class="courses-item__rtvalue">4.5</span>
+                                    </div>
+                                </div >
+                                <p class="courses-item__desc">
+                                    Get the best course, gain knowledge and shine
+                                    for your future career.
+                                </p>
+                                <div class="d--flex justify__content--spbetweens align__items--center mt-12">
+                                    <span class="courses-item__price"
+                                        >$120.75</span
+                                    >
+                                    <a href="#!" class="btn btn__color--primary"
+                                        >Book Now</a
+                                    >
+                                </div>
+                            </div >
+                        </div>
+                        <div class="courses-item flex--1">
+                            <a href="#!"><img src="./assets/img/ui-ux.jpg" alt="" class="courses-item__thumb" /></a>
+                            <div class="px--22 py--16">
+                                <div class="d--flex justify__content--spbetweens" >
+                                    <h3 class="courses-item__title">
+                                        <a href="#!">UI/UX design</a>
+                                    </h3>
+                                    <div class="d--flex align__items--center">
+                                        <img src="/assets/img/Star.svg" alt="">
+                                        <span class="courses-item__rtvalue">4.5</span>
+                                    </div>
+                                </div >
+                                <p class="courses-item__desc">
+                                    Get the best course, gain knowledge and shine
+                                    for your future career.
+                                </p>
+                                <div class="d--flex justify__content--spbetweens align__items--center mt-12">
+                                    <span class="courses-item__price"
+                                        >$120.75</span
+                                    >
+                                    <a href="#!" class="btn btn__color--primary"
+                                        >Book Now</a
+                                    >
+                                </div>
+                            </div >
+                        </div>
+                        <div class="courses-item flex--1">
+                            <a href="#!"><img src="./assets/img/app-design.jpg" alt="" class="courses-item__thumb" /></a >
+                            <div class="px--22 py--16">
+                                <div class="d--flex justify__content--spbetweens" >
+                                    <h3 class="courses-item__title">
+                                        <a href="#!">Web App design</a>
+                                    </h3>
+                                    <div class="d--flex align__items--center">
+                                        <img src="/assets/img/Star.svg" alt="">
+                                        <span class="courses-item__rtvalue">4.5</span>
+                                    </div>
+                                </div >
+                                <p class="courses-item__desc">
+                                    Get the best course, gain knowledge and shine
+                                    for your future career.
+                                </p>
+                                <div class="d--flex justify__content--spbetweens align__items--center mt-12">
+                                    <span class="courses-item__price"
+                                        >$120.75</span
+                                    >
+                                    <a href="#!" class="btn btn__color--primary"
+                                        >Book Now</a
+                                    >
+                                </div>
+                            </div >
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="feedback">
                 <div class="content"></div>
